@@ -1,0 +1,11 @@
+version: 2
+
+# this is in code only, but in BQ they are under the same schema/dataset
+sources:
+  - name: raw
+    database: dbt-learn-demo
+    schema: kinfante_raw
+    tables:
+      - name: customers
+      - name: orders
+      - name: payments
